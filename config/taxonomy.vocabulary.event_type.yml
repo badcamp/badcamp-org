@@ -1,0 +1,8 @@
+uuid: 8b3a65cd-5ea1-4e0f-ab33-fbddc0c955a6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event Type'
+vid: event_type
+description: 'Type of ways to classify events'
+weight: 0

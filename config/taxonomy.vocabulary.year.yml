@@ -1,0 +1,8 @@
+uuid: 52752ab2-3c71-4414-a56c-7c896643620f
+langcode: en
+status: true
+dependencies: {  }
+name: Year
+vid: year
+description: 'Year associated with content'
+weight: 0

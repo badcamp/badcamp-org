@@ -1,0 +1,17 @@
+uuid: 17bd4ac4-579a-4a77-ab5c-d496201b22b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Training
+type: training
+description: 'Use <em>training</em> for a group of people to follow a specific teaching based on a particular topic. '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

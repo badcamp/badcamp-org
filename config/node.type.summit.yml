@@ -1,0 +1,17 @@
+uuid: 23824ac3-2b54-49fd-a9e2-000250225ec3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Summit
+type: summit
+description: 'Use a <em>summit</em> for a large group of people to gather for a particular topic.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,8 @@
+uuid: 598ad96d-828a-460c-bde6-9a2df90a34d8
+langcode: en
+status: true
+dependencies: {  }
+id: sf-drupal-user-group
+label: 'SF Drupal User Group'
+description: 'Menu used for the SF Drupal User Group Subsite'
+locked: false

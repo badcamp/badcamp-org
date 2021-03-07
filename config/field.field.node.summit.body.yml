@@ -1,0 +1,23 @@
+uuid: 41c60a66-9de5-40e6-a57e-71a3766869a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.summit
+  module:
+    - text
+id: node.summit.body
+field_name: body
+entity_type: node
+bundle: summit
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

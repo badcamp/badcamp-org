@@ -1,0 +1,28 @@
+uuid: a05b31d0-b7b2-445d-8055-ace7ffae2e27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job_posting.body
+    - node.type.job_posting
+  module:
+    - text
+    - user
+id: node.job_posting.default
+targetEntityType: node
+bundle: job_posting
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

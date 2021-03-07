@@ -1,0 +1,28 @@
+uuid: 4630dd5e-b20a-4038-90b8-6090796ddd33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.summit.body
+    - node.type.summit
+  module:
+    - text
+    - user
+id: node.summit.default
+targetEntityType: node
+bundle: summit
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
