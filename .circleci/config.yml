@@ -15,25 +15,22 @@ workflows:
             # https://github.com/pantheon-systems/quicksilver-examples/
             - run: terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y
             - run: terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" cr
+            - run:                
+                command: |
+                  # If exported configuration is available, then import it.
+                  if [ -f "config/system.site.yml" ] ; then
+                    terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- config-import --yes
+                  fi
             - run: 
                 command: |
                   if [[ $CIRCLE_BRANCH != "main" ]] ; then
                     exit 0
                   fi
-
-                  # Merge the multidev for the PR into the dev environment
                   terminus -n build:env:merge "$TERMINUS_SITE.$TERMINUS_ENV" --yes
-
-                  # Run updatedb on the dev environment
                   terminus -n drush $TERMINUS_SITE.dev -- updatedb --yes
-
-                  # If there are any exported configuration files, then import them
                   if [ -f "config/system.site.yml" ] ; then
                     terminus -n drush "$TERMINUS_SITE.dev" -- config-import --yes
                   fi
-
-                  # Delete old multidev environments associated with a PR that has been
-                  # merged or closed.
                   terminus -n build:env:delete:pr "$TERMINUS_SITE" --yes
 orbs:
   pantheon: pantheon-systems/pantheon@0.2.0
