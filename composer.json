@@ -18,6 +18,8 @@
         }
     ],
     "require": {
+        "badcamp/badcamp_theme": "dev-main",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
         "drupal/block_visibility_groups": "^1.4",
         "drupal/context": "^4.0@beta",
@@ -89,5 +91,13 @@
         "platform": {
             "php": "7.4"
         }
+    },
+    "scripts": {
+        "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon"
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
     }
 }

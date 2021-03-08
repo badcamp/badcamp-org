@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f53c7e2eea8ebab72369512ad8831f8c",
+    "content-hash": "ce8d7383b252c64f0b9ec9178f55c336",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -61,6 +61,45 @@
                 "source": "https://github.com/asm89/stack-cors/tree/1.3.0"
             },
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "badcamp/badcamp_theme",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/badcamp/badcamp_theme.git",
+                "reference": "cc333ce082de7bd7fbae7e025bb869b50e5f600a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/badcamp/badcamp_theme/zipball/cc333ce082de7bd7fbae7e025bb869b50e5f600a",
+                "reference": "cc333ce082de7bd7fbae7e025bb869b50e5f600a",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.10"
+            },
+            "require-dev": {
+                "drupal/twig_vardumper": "^2.2"
+            },
+            "default-branch": true,
+            "type": "drupal-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mel-miller",
+                    "email": "miller.2676@gmail.com"
+                }
+            ],
+            "description": "Drupal theme for badcamp.org.",
+            "support": {
+                "issues": "https://github.com/badcamp/badcamp_theme/issues",
+                "source": "https://github.com/badcamp/badcamp_theme/tree/main"
+            },
+            "time": "2021-03-08T21:09:41+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -8499,6 +8538,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "badcamp/badcamp_theme": 20,
         "drupal/context": 10
     },
     "prefer-stable": true,
